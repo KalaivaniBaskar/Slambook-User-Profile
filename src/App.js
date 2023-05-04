@@ -104,6 +104,16 @@ function App() {
       country: "USA",
       mobile : '89750025',
       password : 'rani123'
+    },
+    {
+      id: 10,
+      name: 'Anna',
+      email: 'anna@gmail.com',
+      gender: 'female',
+      city: 'Colorado',
+      country: "USA",
+      mobile : '89750025',
+      password : 'anna123'
     } 
   ]);
 
