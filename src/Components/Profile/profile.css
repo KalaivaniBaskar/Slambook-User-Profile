@@ -1,0 +1,12 @@
+.user-info{
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}
+.disp-profile{
+
+    background-image: linear-gradient( to bottom right, rgb(82, 150, 165), rgb(239, 230, 221), rgb(118, 231, 139) );
+    border: 2px solid cadetblue;
+    border-radius: 15px; 
+    color: #171738;
+}

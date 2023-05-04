@@ -1,0 +1,22 @@
+.hd-title{
+    margin-top: 2em;
+    margin-bottom: 8rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.wrapper .user-wrapper{
+    width: 25%;
+    height: 50%;
+    background-image: linear-gradient( to bottom right, rgb(82, 150, 165), rgb(239, 230, 221), rgb(132, 232, 150) );
+    border-radius: 10px;
+    border: 1px solid orange; 
+}
+
+.wrapper .user-wrapper button{
+    margin-bottom: 1em;
+}

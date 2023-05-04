@@ -1,0 +1,17 @@
+.footer-wrapper{
+    width: 100%;
+    position: fixed ;
+    bottom: 0;
+    color: blue;
+    font-size:1.25rem; 
+    flex-wrap: nowrap;
+}
+.footer-content{
+    background-image: linear-gradient(rgb(199, 195, 195), white); 
+}
+#footer-nav{
+    color: black;
+}
+#footer-nav:active{
+    border: 1px solid black;
+}

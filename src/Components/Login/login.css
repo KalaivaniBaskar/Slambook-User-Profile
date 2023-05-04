@@ -1,0 +1,15 @@
+.form-wrapper{
+    width: 30vw;
+    margin: 0 auto;
+    
+}
+.input-group-text{
+    font-size: 1.25rem;
+}
+.form-wrapper .input-wrapper{
+    margin: 1em 0;
+}
+
+.error{
+    color: red;
+}
