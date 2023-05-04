@@ -1,13 +1,13 @@
 .hd-title{
     margin-top: 2em;
-    position: relative;
+    
+    
 }
 .wrapper{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    position: absolute;
-    margin-bottom: 3rem;
+    
 }
 
 .wrapper .user-wrapper{

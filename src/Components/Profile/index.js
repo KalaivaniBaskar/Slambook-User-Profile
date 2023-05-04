@@ -28,8 +28,8 @@ const Profile = (props) => {
                                 <button className='btn btn-info fs-5'>Login to your Profile</button> 
                             </Link> } 
         </div>
-        <div>
-            <h2 className="text-primary text-decoration-underline mb-3 mt-3 py-4 fst-italic">Profile</h2>
+        <div className="mb-8">
+            <h2 className="text-primary text-decoration-underline mt-3 py-4 fst-italic">Profile</h2>
 
             <h4 className=" py-3" >Showing Profile of: {currentUser ? currentUser.name : ' - '}</h4> 
             {currentUser && 
