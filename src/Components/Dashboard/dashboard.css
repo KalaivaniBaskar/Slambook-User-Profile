@@ -1,7 +1,10 @@
 .hd-title{
-    margin-top: 2em;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     
-    
+}
+.adjust{
+    height: 5rem;;
 }
 .wrapper{
     display: flex;

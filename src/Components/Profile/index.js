@@ -49,7 +49,7 @@ const Profile = (props) => {
                               </div> 
                               </div>
                         }
-            
+            <div className='adjust'></div>
         </div>  
 
         </>
