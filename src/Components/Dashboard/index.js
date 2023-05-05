@@ -45,7 +45,7 @@ const Dashboard = (props) => {
              <button className='btn btn-info fs-5'>Click here</button> 
              </Link></h4> 
             }
-            <div className='adjust'></div>
+            {/* <div className='adjust'></div> */}
         </div>
     )
 }
