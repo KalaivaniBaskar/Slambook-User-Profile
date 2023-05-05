@@ -1,3 +1,7 @@
+.loginProfile{
+    height: 80vh; 
+    overflow-y: auto;
+}
 .user-info{
     position: absolute;
     top: 6rem;

@@ -143,7 +143,7 @@ function App() {
         <Route path='/login' element={<Login users={users} userDetails={userDetails} setUserDetails={setUserDetails} />} />
         <Route path='/register' element={<Register users={users} setUser={setUser}/>} />
       </Routes>
-
+      
       <Footer />
     </div>
   );

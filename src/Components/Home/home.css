@@ -1,15 +1,33 @@
 .slambook-home{
+    height: 80vh; 
+    overflow-y: auto;
     color: #471323; 
     margin-top: 4rem; 
-    margin-bottom: 4rem;
+   
 } 
-.form-wrapper{
-    width: 30vw;
-    margin: 0 auto;
-    
-}
+@media screen and (min-width: 961px) {
+    .form-wrapper{
+        width: 40vw;
+        margin: 0 auto;
+        
+    }
+    }
+    @media screen and (min-width: 601px) and (max-width: 960px) {
+        .form-wrapper{
+            width: 70vw;
+            margin: 0 auto;
+            
+        }
+        }
+     @media screen and (max-width: 600px) {
+            .form-wrapper{
+                width: 90vw;
+                margin: 0 auto;
+                
+            }
+         }
 .input-group-text{
-    font-size: 1.25rem;
+    font-size: 0.85rem;
 }
 .form-wrapper .input-wrapper{
     margin: 1em 0;

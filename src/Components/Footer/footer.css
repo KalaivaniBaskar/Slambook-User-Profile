@@ -1,15 +1,13 @@
 .footer-wrapper{
     width: 100%; 
     position: fixed ;
-    bottom: 0;
-    height: 5rem;
+    bottom: 0;   
     color: blue;
-    font-size:1.25rem; 
-    overflow: auto;
-   
+    font-size: 0.85rem;  
 }
 .footer-content{
     background-image: linear-gradient(rgb(199, 195, 195), white); 
+    overflow: auto !important;  
 }
 #footer-nav{
     color: black;

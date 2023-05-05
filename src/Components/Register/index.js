@@ -58,63 +58,63 @@ const Register = (props) => {
     }
 
     return (
-        <div className="mt-4">
+        <div className="mt-4 mb-5 register">
             <h2 className='fst-italic'>Register</h2>
-            <div className="form-wrap  mt-4 border border-info px-4 py-3">
+            <div className="form-wrap  mt-4 mb-5 border border-info px-4 py-3">
                 <form id="reg-form" onSubmit={handleRegister} >  
                 <div className='container'> 
                     { errorFlag && <h3 className='err-msg text-danger '> {errorMsg} </h3> }
                     { (sFlag && !errorFlag) && <h3 className='err-msg text-success '> {errorMsg} </h3> }
                     <div className='row'>
                     <div className="form-left col-md-6">                   
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Name *</span>
-                        <input type="text" className="form-control fs-5" id="reg-name" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping" required/>
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Name *</span>
+                        <input type="text" className="form-control " id="reg-name" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping" required/>
                     </div> 
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Address</span>
-                        <input type="text" className="form-control fs-5" id="reg-address" placeholder="Address" aria-label="Name" aria-describedby="addon-wrapping" />
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Address</span>
+                        <input type="text" className="form-control " id="reg-address" placeholder="Address" aria-label="Name" aria-describedby="addon-wrapping" />
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >City *</span>
-                        <input type="text" className="form-control fs-5" id="reg-city" placeholder="City" aria-label="Name" aria-describedby="addon-wrapping" required />
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >City *</span>
+                        <input type="text" className="form-control " id="reg-city" placeholder="City" aria-label="Name" aria-describedby="addon-wrapping" required />
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Country *</span>
-                        <input type="text" className="form-control fs-5" id="reg-country" placeholder="Country" aria-label="Name" aria-describedby="addon-wrapping" required />
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Country *</span>
+                        <input type="text" className="form-control " id="reg-country" placeholder="Country" aria-label="Name" aria-describedby="addon-wrapping" required />
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Pincode</span>
-                        <input type="text" className="form-control fs-5" id="reg-pincode" placeholder="PinCode" aria-label="Name" aria-describedby="addon-wrapping" />
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Pincode</span>
+                        <input type="text" className="form-control " id="reg-pincode" placeholder="PinCode" aria-label="Name" aria-describedby="addon-wrapping" />
                     </div>
                 </div>
                 <div className="form-right col-md-6"> 
                 
-                    <div className="input-group flex-nowrap input-wrapper  mb-5 shadow bg-body rounded ">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Email *</span>
-                        <input type="email" className="form-control fs-5" id="reg-email" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping" required />
+                    <div className="input-group flex-nowrap input-wrapper  mb-3 shadow bg-body rounded ">
+                        <span className="input-group-text  fw-bold fst-italic" >Email *</span>
+                        <input type="email" className="form-control " id="reg-email" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping" required />
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Mobile</span>
-                        <input type="text" className="form-control fs-5" id="reg-mobile" placeholder="Mobile Number" aria-label="MobileNumber" aria-describedby="addon-wrapping"  required />
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Mobile</span>
+                        <input type="text" className="form-control " id="reg-mobile" placeholder="Mobile Number" aria-label="MobileNumber" aria-describedby="addon-wrapping"  required />
 
                     </div> 
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded" id="reg-gender">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Gender *</span>
+                    <div className="input-group flex-nowrap overflow-auto input-wrapper shadow mb-3 bg-body rounded" id="reg-gender">
+                        <span className="input-group-text  fw-bold fst-italic" >Gender *</span>
                         <input type="radio" className=" " name="gender"  value="Male" aria-label="male" aria-describedby="addon-wrapping" /> 
-                        <span className="input-group-text fs-5 border-0" >Male</span>
+                        <span className="input-group-text  border-0" >Male</span>
                         <input type="radio" className=" " name="gender"  value="Female" aria-label="male" aria-describedby="addon-wrapping" />
-                        <span className="input-group-text fs-5 border-0 " >Female</span>
+                        <span className="input-group-text  border-0 " >Female</span>
                         <input type="radio" className=" " name="gender"  value="unspecified" aria-label="male" aria-describedby="addon-wrapping" />
-                        <span className="input-group-text fs-5 border-0 " >Don't specify</span>
+                        <span className="input-group-text  border-0 " >Don't specify</span>
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Password *</span>
-                        <input type="password" className="form-control fs-5" id="reg-password" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping" required/>
+                    <div className="input-group flex-nowrap input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Password *</span>
+                        <input type="password" className="form-control " id="reg-password" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping" required/>
                     </div>
-                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                        <span className="input-group-text fs-5 fw-bold fst-italic" >Re-enter Password *</span>
-                        <input type="password" className="form-control fs-5" id="reg-pwd" placeholder="Re-enter Password" aria-label="Password" aria-describedby="addon-wrapping" required/>
+                    <div className="input-group flex-nowrap overflow-auto input-wrapper shadow mb-3 bg-body rounded">
+                        <span className="input-group-text  fw-bold fst-italic" >Re-enter Password *</span>
+                        <input type="password" className="form-control " id="reg-pwd" placeholder="Re-enter Password" aria-label="Password" aria-describedby="addon-wrapping" required/>
                     </div>
                 </div>    
                     </div>
@@ -122,7 +122,7 @@ const Register = (props) => {
                 
                     
                     <div className='button-wrapper '>
-                        <button className="btn btn-primary fs-5 " type="submit">Register</button>
+                        <button className="btn btn-primary  " type="submit">Register</button>
                     </div>
                 </form>
             </div>

@@ -102,74 +102,74 @@ const EditProfile = (props) => {
     }
 
     return(
-      <>
-      <div>
+      
+      <div className="profiledit">
         { (!userID) && <div className=" mt-3 mb-10"> 
-                             <h3 className="py-4 fst-italic">Log-in to edit your profile</h3>
+                             <h4 className="py-4 fst-italic">Log-in to edit your profile</h4>
                              <Link to={`/login`}>
-                                <button className='btn btn-info fs-5'>Click here to Log in</button> 
+                                <button className='btn btn-info fs-6'>Click here to Log in</button> 
                             </Link> 
                             </div> }
             { isLogged &&
                             <div className="edit-page">
                             <h3>Edit profile of {currentUser.name}</h3>
-                            <div className="form-wrap  mt-4 border border-info px-4 py-3">
+                            <div className="form-wrap overflow-auto mt-4 mx-auto  border border-info px-4 py-3">
                                 <form id="edit-form" onSubmit={handleEditProfile} >  
                                 <div className='container'> 
-                                    { errorFlag && <h3 className='err-msg text-danger '> {errorMsg} </h3> }
-                                    { (sFlag && !errorFlag) && <h3 className='err-msg text-success '> {errorMsg} </h3> }
+                                    { errorFlag && <h5 className='err-msg text-danger '> {errorMsg} </h5> }
+                                    { (sFlag && !errorFlag) && <h5 className='err-msg text-success '> {errorMsg} </h5> }
                                     <div className='row'>
                                     <div className="form-left col-md-6">                   
                                     <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Name *</span>
-                                        <input type="text" className="form-control fs-5" id="edit-name" defaultValue={currentUser.name} aria-label="Name" aria-describedby="addon-wrapping" />
+                                        <span className="input-group-text   fw-bold fst-italic" >Name *</span>
+                                        <input type="text" className="form-control  " id="edit-name" defaultValue={currentUser.name} aria-label="Name" aria-describedby="addon-wrapping" />
                                     </div> 
                                     <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Address</span>
-                                        <input type="text" className="form-control fs-5" id="edit-address" defaultValue={currentUser.address ? currentUser.address : "" }aria-label="Name" aria-describedby="addon-wrapping" />
+                                        <span className="input-group-text   fw-bold fst-italic" >Address</span>
+                                        <input type="text" className="form-control  " id="edit-address" defaultValue={currentUser.address ? currentUser.address : "" }aria-label="Name" aria-describedby="addon-wrapping" />
                                     </div>
                                     <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >City *</span>
-                                        <input type="text" className="form-control fs-5" id="edit-city" defaultValue={currentUser.city} aria-label="City" aria-describedby="addon-wrapping"   />
+                                        <span className="input-group-text   fw-bold fst-italic" >City *</span>
+                                        <input type="text" className="form-control  " id="edit-city" defaultValue={currentUser.city} aria-label="City" aria-describedby="addon-wrapping"   />
                                     </div>
                                     <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Country *</span>
-                                        <input type="text" className="form-control fs-5" id="edit-country" defaultValue={currentUser.country} aria-label="Country" aria-describedby="addon-wrapping"  />
+                                        <span className="input-group-text   fw-bold fst-italic" >Country *</span>
+                                        <input type="text" className="form-control  " id="edit-country" defaultValue={currentUser.country} aria-label="Country" aria-describedby="addon-wrapping"  />
                                     </div>
                                     <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Pincode</span>
-                                        <input type="text" className="form-control fs-5" id="edit-pincode" defaultValue={currentUser.pincode ? currentUser.pincode : "" } aria-label="Name" aria-describedby="addon-wrapping" />
+                                        <span className="input-group-text   fw-bold fst-italic" >Pincode</span>
+                                        <input type="text" className="form-control  " id="edit-pincode" defaultValue={currentUser.pincode ? currentUser.pincode : "" } aria-label="Name" aria-describedby="addon-wrapping" />
                                     </div>
                                     </div>
                                     <div className="form-right col-md-6"> 
                                     
                                         <div className="input-group flex-nowrap input-wrapper  mb-5 shadow bg-body rounded ">
-                                            <span className="input-group-text fs-5 fw-bold fst-italic" >Email *</span>
-                                            <input type="email" className="form-control fs-5" id="edit-email" defaultValue={currentUser.email} aria-label="Email" aria-describedby="addon-wrapping" readOnly />
+                                            <span className="input-group-text   fw-bold fst-italic" >Email *</span>
+                                            <input type="email" className="form-control  " id="edit-email" defaultValue={currentUser.email} aria-label="Email" aria-describedby="addon-wrapping" readOnly />
                                         </div>
                                         <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                            <span className="input-group-text fs-5 fw-bold fst-italic" >Mobile</span>
-                                            <input type="text" className="form-control fs-5" id="edit-mobile" defaultValue={currentUser.mobile ? currentUser.mobile : "" } aria-label="MobileNumber" aria-describedby="addon-wrapping"   />
+                                            <span className="input-group-text   fw-bold fst-italic" >Mobile</span>
+                                            <input type="text" className="form-control  " id="edit-mobile" defaultValue={currentUser.mobile ? currentUser.mobile : "" } aria-label="MobileNumber" aria-describedby="addon-wrapping"   />
                     
                                         </div> 
                                         {/* <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded" id="edit-gender">
-                                            <span className="input-group-text fs-5 fw-bold fst-italic" >Gender *</span>
+                                            <span className="input-group-text   fw-bold fst-italic" >Gender *</span>
                                             <input type="radio" className=" " name="gender"  value="Male" aria-label="male" aria-describedby="addon-wrapping" /> 
-                                            <span className="input-group-text fs-5 border-0" >Male</span>
+                                            <span className="input-group-text   border-0" >Male</span>
                                             <input type="radio" className=" " name="gender"  value="Female" aria-label="male" aria-describedby="addon-wrapping" />
-                                            <span className="input-group-text fs-5 border-0 " >Female</span>
+                                            <span className="input-group-text   border-0 " >Female</span>
                                             <input type="radio" className=" " name="gender"  value="unspecified" aria-label="male" aria-describedby="addon-wrapping" />
-                                            <span className="input-group-text fs-5 border-0 " >Don't specify</span>
+                                            <span className="input-group-text   border-0 " >Don't specify</span>
                                         </div> */}
                                         <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                            <span className="input-group-text fs-5 fw-bold fst-italic" >Gender *</span>
-                                            <input type="text" className="form-control fs-5" id="edit-gender" defaultValue={currentUser.gender} aria-label="Name" aria-describedby="addon-wrapping" readOnly/>
+                                            <span className="input-group-text   fw-bold fst-italic" >Gender *</span>
+                                            <input type="text" className="form-control  " id="edit-gender" defaultValue={currentUser.gender} aria-label="Name" aria-describedby="addon-wrapping" readOnly/>
                                         </div>   
                                     </div>
                                 </div>                               
                                     
                                 <div className='button-wrapper '>
-                                    <button className="btn btn-primary fs-5 " type="submit">Save Changes</button>
+                                    <button className="btn btn-primary " type="submit">Save Changes</button>
                                 </div>
                                 </div>
                                 </form>
@@ -178,28 +178,28 @@ const EditProfile = (props) => {
                             {/* change password only */}
                             <div className="pwd-wrapper border border-info mx-auto"> 
 
-                            <button onClick={enableEditPassword} className="btn btn-light rounded fs-5 text-decoration-underline">Click here to Edit Password</button>
+                            <button onClick={enableEditPassword} className="btn btn-light rounded   text-decoration-underline">Click here to Edit Password</button>
                             
                                 <form id="chg-pwd" onSubmit={handleEditPassword} >  
 
 
                                 <div className='container mt-5 mb-5'> 
-                                    { errorFlag && <h3 className='err-msg text-danger '> {errorMsg} </h3> }
-                                    { (sFlag && !errorFlag) && <h3 className='err-msg text-success '> {errorMsg} </h3> }
-                                    <div className='row'>                                   
+                                    { errorFlag && <h5 className='err-msg text-danger '> {errorMsg} </h5> }
+                                    { (sFlag && !errorFlag) && <h5 className='err-msg text-success '> {errorMsg} </h5> }
+                                    <div className='row justify-content-center'>                                   
                                        <div className="col-md-6">                                
                                     
-                                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Password *</span>
-                                        <input type="password" className="form-control fs-5" id="edit-password" defaultValue={currentUser.password} aria-label="Password" aria-describedby="addon-wrapping" readOnly />
+                                    <div className="input-group flex-nowrap input-wrapper shadow  mb-5 bg-body rounded">
+                                        <span className="input-group-text   fw-bold fst-italic" >Password *</span>
+                                        <input type="password" className="form-control  " id="edit-password" defaultValue={currentUser.password} aria-label="Password" aria-describedby="addon-wrapping" readOnly />
                                     </div>
-                                    <div className="input-group flex-nowrap input-wrapper shadow mb-5 bg-body rounded">
-                                        <span className="input-group-text fs-5 fw-bold fst-italic" >Re-enter Password *</span>
-                                        <input type="password" className="form-control fs-5" id="edit-pwd" defaultValue={currentUser.password}  aria-label="Password" aria-describedby="addon-wrapping" readOnly />
+                                    <div className="input-group flex-nowrap input-wrapper shadow mx-auto mb-5 bg-body rounded">
+                                        <span className="input-group-text   fw-bold fst-italic" >Re-enter Password *</span>
+                                        <input type="password" className="form-control  " id="edit-pwd" defaultValue={currentUser.password}  aria-label="Password" aria-describedby="addon-wrapping" readOnly />
                                     </div>
                                                                    
                                     <div className='button-wrapper '>
-                                        <button className="btn btn-primary fs-5 " type="submit">Confirm Password</button>
+                                        <button className="btn btn-primary" type="submit">Confirm Password</button>
                                     </div>
                                 </div>
                                 </div>
@@ -209,7 +209,7 @@ const EditProfile = (props) => {
                         </div>}
                         {/* <div className='adjust'></div> */}
       </div>
-      </>
+      
     )
 }
 export default EditProfile;

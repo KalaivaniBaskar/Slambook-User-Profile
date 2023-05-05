@@ -49,7 +49,7 @@ const Login = (props) => {
 
     return (
         <div className='form-hd mt-5'>
-            <h2 className='fst-italic'>User Log-in</h2>
+            <h4 className='fst-italic'>User Log-in</h4>
             <div className="form-wrapper mt-5">
                 <form onSubmit={handleSubmit} >
                     <div className="input-group flex-wrap input-wrapper">
@@ -62,8 +62,8 @@ const Login = (props) => {
                     </div>
                     {isError && <div className='error fw-bold'>Invalid credentials!</div>}
                     <div className='button-wrapper'>
-                        <button className="btn btn-primary fs-5 mx-1" type="submit">Login</button> 
-                        <button className="btn btn-primary fs-5 ml-1" type="button" onClick={handleReset}>Reset</button> 
+                        <button className="btn btn-primary  mx-1" type="submit">Login</button> 
+                        <button className="btn btn-primary  ml-1" type="button" onClick={handleReset}>Reset</button> 
                     </div>
                 </form>
             </div>

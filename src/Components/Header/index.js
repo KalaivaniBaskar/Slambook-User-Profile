@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import './header.css'
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg  headerNav">
+        <nav className="navbar navbar-expand-xs navbar-expand-sm navbar-expand-md navbar-expand-lg   headerNav">
             <div className="container-fluid">
                 <NavLink className="navbar-brand" to='/'> SlamBook ! </NavLink>
                 

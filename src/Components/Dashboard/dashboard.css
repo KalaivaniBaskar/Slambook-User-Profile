@@ -1,15 +1,12 @@
 .hd-title{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    
+   height: 80vh; 
+   overflow-y: auto;
 }
 .wrapper{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
-
 .wrapper .user-wrapper{
     width: 25%;
     height: 50%;

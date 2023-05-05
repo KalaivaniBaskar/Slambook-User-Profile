@@ -1,7 +1,14 @@
 .form-wrap{
-    width: 80vw;
-    margin: 0 auto;
+    width: 80vw; 
+    margin-left: 4rem;
+    margin-bottom: 4rrem !important;
+    font-size: 0.85rem !important;
+    
 }
-.form-wrap .input-wrapper{
-    margin: 2em 0;
+/* .form-wrap .input-wrapper{
+    margin: 2em;
+} */
+.register{
+    height: 60%;
+    overflow-y: auto; 
 }
