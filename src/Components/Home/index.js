@@ -65,6 +65,7 @@ const Home = () => {
                 <p className='my-3'>( Default is admin and password )</p>
             </div>
         </div>
+        <div className='adjust'></div>
         </div>
     )
 }

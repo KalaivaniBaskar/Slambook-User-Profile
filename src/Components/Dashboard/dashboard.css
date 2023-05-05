@@ -3,9 +3,6 @@
     margin-bottom: 5rem;
     
 }
-.adjust{
-    height: 5rem;;
-}
 .wrapper{
     display: flex;
     justify-content: space-around;

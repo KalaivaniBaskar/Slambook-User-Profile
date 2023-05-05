@@ -67,6 +67,7 @@ const Login = (props) => {
                     </div>
                 </form>
             </div>
+            <div className='adjust'></div>
         </div>
     )
 }

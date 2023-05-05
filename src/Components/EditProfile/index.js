@@ -207,6 +207,7 @@ const EditProfile = (props) => {
                                 </form>
                             </div>
                         </div>}
+                        <div className='adjust'></div>
       </div>
       </>
     )
